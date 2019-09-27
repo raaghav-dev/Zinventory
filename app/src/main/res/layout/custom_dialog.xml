@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="500dp"
+
+    android:background="@drawable/bgdialog"
+    android:orientation="vertical"
+    tools:context=".CustomDialog">
+
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:text="Enter Stock Data"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/item_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/txtbox1"
+        android:hint="Item Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/selected_item"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/item_name"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:padding="20dp"-->
+<!--        />-->
+
+
+    <EditText
+        android:id="@+id/store_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/txtbox1"
+        android:hint="Store Name"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/txtbox1"
+        android:hint="Accepted Quantity in kgs"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/store_name" />
+
+
+
+    <EditText
+        android:id="@+id/rejectedQty"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/txtbox1"
+        android:hint="Rejected Quantity in Kgs"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/submit"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="105dp"-->
+<!--        android:layout_marginTop="140dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:background="@drawable/bgbtnblue"-->
+<!--        android:text="Submit"-->
+<!--        android:textColor="#FFF"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/quantity"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.923"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginLeft="208dp" />-->
+
+
+</LinearLayout>

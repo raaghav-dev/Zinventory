@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ZappTraK</string>
+
+    <!-- Add Item Activity-->
+    <string name="itemTitle">Receive Item</string>
+
+</resources>
